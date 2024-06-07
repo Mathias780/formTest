@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+body {
+    background-color: hsl(148, 38%, 91%);
+    padding: 1rem; /* Add padding to avoid cut off content */
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+
+.form_container {
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    margin-inline: 1rem;
+    max-width: 100%;
+    max-height: 90%; /* Ensure the form fits within the viewport height */
+    overflow-y: auto; /* Allow scrolling if the content overflows */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.form_container h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.First_form {
+    display: flex;
+    flex-direction: column;
+}
+.First_form label {
+    margin-bottom: 0.3rem;
+}
+
+.grid_form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.email_Form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+}
+
+.email_Form label {
+    margin-bottom: 0.3rem;
+}
+
+.make_Grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.Query_Form p {
+    margin-bottom: 0.3rem;
+}
+
+.Query_Form {
+    margin-bottom: 0.8rem;
+}
+
+.message_form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.message_form label {
+    margin-bottom: 0.3rem;
+}
+
+.Consent_form {
+    margin-bottom: 1rem;
+}
+
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+.First_query {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+}
+
+.First_query label {
+    margin-left: 0.5rem;
+}
+
+.Query_Form p {
+    color: hsl(187, 24%, 22%);
+    font-size: 1rem;
+}
+
+label {
+    color: hsl(187, 24%, 22%);
+    font-size: 1rem;
+}
+
+.CompletedForm {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+@media(max-width:480px) {
+    .grid_form {
+        grid-template-columns: 1fr;
+    }
+    .make_Grid {
+        grid-template-columns: 1fr;
+    }
+}
+
